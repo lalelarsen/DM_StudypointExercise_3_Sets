@@ -7,10 +7,10 @@ and the only time it is not is when you complement a infinite set.
 
 this is the output of ExerciseRunner.java:
 
-Set A = {1,2,3,4}
-Set B = {3,4,5}
-Set C = ℝ
-Set D = {}
+Set A = {1,2,3,4}  
+Set B = {3,4,5}  
+Set C = ℝ  
+Set D = {}  
 
 ---Intersection---
 A∩B = {3,4}

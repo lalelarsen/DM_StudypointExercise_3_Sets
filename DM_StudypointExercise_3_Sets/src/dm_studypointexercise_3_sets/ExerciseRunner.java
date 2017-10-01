@@ -12,13 +12,10 @@ package dm_studypointexercise_3_sets;
 public class ExerciseRunner {
 
     public static void main(String[] args) {
-        Integer[] listA = {1, 2, 3, 4};
-        Integer[] listB = {3, 4, 5};
-
         //A is a set of 4 elements
-        Set<Integer> A = new Set<>(listA);
+        Set<Integer> A = new Set<>(new Integer[]{1, 2, 3, 4});
         //B is a set of 3 elements
-        Set<Integer> B = new Set<>(listB);
+        Set<Integer> B = new Set<>(new Integer[]{3, 4, 5});
         //C is ℝ
         Set<Integer> C = new Set<>(true);
         //D is an empty set
@@ -112,6 +109,39 @@ public class ExerciseRunner {
         
         System.out.println("");
         System.out.println("");
+        
+        System.out.println("---Subsets & Equality---");
+        Set E = new Set(new Integer[]{1,2});
+        Set F = new Set(new Integer[]{1,2,3,4});
+        Set G = new Set(new Integer[]{3,4});
+        Set H = new Set(true);
+        Set I = new Set(true);
+        Set J = new Set(new Integer[]{1,2});
+        
+        System.out.println("Set E = {1,2}");
+        System.out.println("Set F = {1,2,3,4}");
+        System.out.println("Set G = {3,4}");
+        System.out.println("Set H = ℝ");
+        System.out.println("Set I = ℝ");
+        System.out.println("Set J = {1,2}");
+        System.out.println("");
+        
+        int i1 = E.compareSet(F);
+        System.out.println("E⊂F = " + i1);
+        int i2 = F.compareSet(E);
+        System.out.println("F⊂E = " + i2);
+        int i3 = E.compareSet(H);
+        System.out.println("E⊂H = " + i3);
+        int i5 = E.compareSet(J);
+        System.out.println("E=J = " + i5);
+        int i4 = H.compareSet(I);
+        System.out.println("H compared to I? = " + i4);
+        int i6 = E.compareSet(G);
+        System.out.println("E compared to G = " + i6);
+        int i7 = H.compareSet(E);
+        System.out.println("H compared to E = " + i7);
+        
+        
     }
 
     public static void printSet(Set s) {

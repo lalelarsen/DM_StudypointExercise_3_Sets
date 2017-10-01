@@ -44,3 +44,21 @@ D-A = {}
   
 ---Complement---  
 ??????  
+  
+  
+---Subsets & Equality---  
+Set E = {1,2}  
+Set F = {1,2,3,4}  
+Set G = {3,4}  
+Set H = ℝ  
+Set I = ℝ  
+Set J = {1,2}  
+  
+E⊂F = -1  
+F⊂E = 1  
+E⊂H = -1  
+E=J = 0  
+H compared to I? = 2  
+E compared to G = -2  
+H compared to E = 1  
+  
